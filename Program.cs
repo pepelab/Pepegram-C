@@ -49,8 +49,8 @@ namespace Pepegram_C
             //переменные
             string сhatMember;
             string[] words = { "привет", "чё как", "че", "как дела", "норм", "ок", "без б", "пока", "как тебя зовут", "что ты здесь делаешь?",
-                        "да", "нет", "блять", "иди нахуй", "лох", "ты кто", "чем ты занимаешся?", "продаешь?", "соси", "интересно", "ку", "го в кс", "просто сижу",
-                        "пепеграм топовый", "согл", ":D", ":/", "<3", "8===D", "похуй", "класс", "не знал", ":)"};
+                        "да", "нет", "ты кто", "чем ты занимаешся?", "интересно", "ку", "го в кс", "просто сижу",
+                        "пепеграм топовый", "согл", ":D", ":/", "<3", "класс", "не знал", ":)"};
             //Console.Write(words[temp]); - генератор случайных слов
 
             Boolean repeatСommand = true;
@@ -81,7 +81,7 @@ namespace Pepegram_C
                                 repeatСommand = false;
                                 Random rand = new Random();
                                 int temp;
-                                temp = rand.Next(34);
+                                temp = rand.Next(26);
                                 Console.Write($"\n\t\t\t{chatMember}: {words[temp]}\n");
                                 Console.Write($"\n\t\t\t{login}: ");
                                 string chatCommand = Console.ReadLine();
